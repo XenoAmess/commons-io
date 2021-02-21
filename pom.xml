@@ -260,6 +260,24 @@ file comparators, endian transformation classes, and much more.
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy</artifactId>
+      <version>${byte-buddy.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy-agent</artifactId>
+      <version>${byte-buddy.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy-android</artifactId>
+      <version>${byte-buddy.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.jimfs</groupId>
       <artifactId>jimfs</artifactId>
       <version>1.2</version>
@@ -319,7 +337,8 @@ file comparators, endian transformation classes, and much more.
     <commons.japicmp.version>0.15.2</commons.japicmp.version>
     <spotbugs.plugin.version>4.2.0</spotbugs.plugin.version>
     <spotbugs.impl.version>4.2.1</spotbugs.impl.version>
-    <jmh.version>1.27</jmh.version>    
+    <byte-buddy.version>1.10.21</byte-buddy.version>
+    <jmh.version>1.27</jmh.version>
     <japicmp.skip>false</japicmp.skip>
     <jacoco.skip>${env.JACOCO_SKIP}</jacoco.skip>
     <commons.release.isDistModule>true</commons.release.isDistModule>
@@ -359,7 +378,7 @@ file comparators, endian transformation classes, and much more.
               <version>8.40</version>
             </dependency>
           </dependencies>
-        </plugin>      
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
